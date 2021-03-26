@@ -1,9 +1,11 @@
+import 'package:ecommerce/screens/sign_in/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
 import '../../../components/default_button.dart';
 import 'splash_content.dart';
+
 
 class Body extends StatefulWidget {
   @override
@@ -82,7 +84,9 @@ class _BodyState extends State<Body> {
                     Spacer(),
                     DefaultButton(
                       text: 'Continuar',
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, SignInScreen.routeName);
+                      },
                     ),
                     SizedBox(height: 20),
                   ],
