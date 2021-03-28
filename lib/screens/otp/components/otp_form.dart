@@ -1,4 +1,6 @@
 import 'package:ecommerce/components/default_button.dart';
+import 'package:ecommerce/screens/home/home_screen.dart';
+import 'package:ecommerce/screens/login_sucess/login_sucess_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -106,9 +108,7 @@ class _OtpFormState extends State<OtpForm> {
           DefaultButton(
             text: 'Continuar',
             onPressed: () {
-              // if (_formKey.currentState.validate()) {
-              //   Navigator.pushNamed(context, OtpScreen.routeName);
-              // }
+              Navigator.pushNamed(context, LoginSucessScreen.routeName);
             },
           )
         ],
