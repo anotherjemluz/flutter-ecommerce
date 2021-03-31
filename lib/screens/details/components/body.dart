@@ -2,6 +2,7 @@ import 'package:ecommerce/components/default_button.dart';
 import 'package:ecommerce/components/rounded_icon_btn.dart';
 import 'package:ecommerce/constants.dart';
 import 'package:ecommerce/models/Product.dart';
+import 'package:ecommerce/screens/cart/cart_screen.dart';
 import 'package:ecommerce/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -47,7 +48,7 @@ class Body extends StatelessWidget {
                           ),
                           child: DefaultButton(
                             text: 'Adicionar ao carrinho',
-                            onPressed: () {},
+                            onPressed: () => Navigator.pushNamed(context, CartScreen.routeName),
                           ),
                         ),
                       )
