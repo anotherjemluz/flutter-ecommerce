@@ -1,3 +1,5 @@
+import 'package:ecommerce/screens/home/home_screen.dart';
+import 'package:ecommerce/screens/profile/profile_screen.dart';
 import 'package:ecommerce/theme.dart';
 import 'package:flutter/material.dart';
 

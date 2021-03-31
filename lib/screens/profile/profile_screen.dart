@@ -4,14 +4,17 @@ import 'package:flutter/material.dart';
 import '../../enums.dart';
 import 'components/body.dart';
 
-class HomeScreen extends StatelessWidget {
-  static String routeName = '/home'; 
+class ProfileScreen extends StatelessWidget {
+  static String routeName = '/profile';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Meu Perfil'),
+      ),
       body: Body(),
       bottomNavigationBar: CustomBottomBar(
-        selectedMenu: MenuState.home,
+        selectedMenu: MenuState.profile,
       ),
     );
   }
